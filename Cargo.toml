@@ -1,0 +1,49 @@
+[package]
+name = "rust-wgpu-wasm-example"
+version = "0.1.0"
+authors = ["Efflam POTIN <62767347+bionic-hillbilly@users.noreply.github.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+futures = "0.3.14"
+wgpu = { version= "0.7.1", features = ["webgl"] }
+wgpu_glyph = "0.11.0"
+winit = { version = "0.24", features = ["web-sys"] }
+wasm-bindgen = "0.2.69"
+wasm-bindgen-futures = "0.4.19"
+js-sys = "0.3.46"
+[dependencies.web-sys]
+version = "0.3.46"
+features = [
+    "Document",
+    "Navigator",
+    "Node",
+    "NodeList",
+    "Gpu",
+    "GpuAdapter",
+    "GpuDevice",
+    "GpuRenderPassColorAttachmentDescriptor",
+    "GpuRenderPassDescriptor",
+    "GpuDeviceDescriptor",
+    "GpuRequestAdapterOptions",
+    "GpuCommandEncoder",
+    "GpuCommandEncoderDescriptor",
+    "GpuLoadOp",
+    "GpuSwapChain",
+    "GpuSwapChainDescriptor",
+    "GpuTexture",
+    "GpuTextureAspect",
+    "GpuTextureDescriptor",
+    "GpuTextureDimension",
+    "GpuTextureFormat",
+    "GpuTextureUsage",
+    "GpuTextureView",
+    "GpuTextureViewDescriptor",
+    "HtmlCanvasElement",
+    "Window",
+    "console"
+]
+
