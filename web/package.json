@@ -1,0 +1,24 @@
+{
+  "name": "rust-wgpu-wasm-example",
+  "version": "0.1.0",
+  "main": "bootstrap.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rustwasm/create-wasm-app#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0",
+    "rust-wgpu-wasm-example": "file:../pkg",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
